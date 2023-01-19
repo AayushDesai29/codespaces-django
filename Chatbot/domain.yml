@@ -1,0 +1,55 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - v_3.3
+  - 3.3_rn
+  - 3.3_dg
+  # - 3.4_rn
+  # - 3.4_dg
+
+actions:
+  - action_v_3.3
+  - action_pdf
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_link1:
+  - text: "Click here to know more about [Release Notes 3.3](https://docshield.kofax.com/KMC/en_US/3.3.0-2bogmz7ao3/print/KofaxMobileSDKReleaseNotes_3.3.0_EN.pdf)." 
+  
+  utter_link2:
+  - text: "Click here to know more about [Dev Guide 3.3](https://docshield.kofax.com/KMC/en_US/3.3.0-2bogmz7ao3/print/KofaxMobileSDKGuide_EN.pdf)."
+
+  # utter_link3:
+  # - text: "Click here to know more about [Release Notes 3.4](https://docshield.kofax.com/KMC/en_US/3.4.0-o6num87075/print/KofaxMobileSDKReleaseNotes_3.4.0_EN.pdf)." 
+  
+  # utter_link4:
+  # - text: "Click here to know more about [Dev Guide 3.4](https://docshield.kofax.com/KMC/en_US/3.4.0-o6num87075/print/KofaxMobileSDKDevelopersGuide_EN.pdf)."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
